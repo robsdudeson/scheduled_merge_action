@@ -1,0 +1,9 @@
+name: 'Scheduled Merge Action'
+description: 'A GitHub Action that will automatically merge PRs based on label!'
+author: 'Robby Thompson <robby.thompson@testdouble.com>'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'code'
+  color: 'gray-dark'
