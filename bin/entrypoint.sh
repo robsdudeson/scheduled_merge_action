@@ -2,4 +2,4 @@
 
 set -e
 
-echo "hello runner"
+mix run -e "ScheduledMerge.hello()"
