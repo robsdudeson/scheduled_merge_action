@@ -2,7 +2,8 @@
 
 set -e
 
-mix local.hex --force
-mix deps.get
+mix do local.hex --force, \
+       deps.get, \
+       deps.compile
 
 mix run -e "ScheduledMerge.hello()"
