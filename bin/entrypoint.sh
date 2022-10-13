@@ -2,6 +2,10 @@
 
 set -e
 
+pwd
+
+ls -hal
+
 mix do local.hex --force, \
        deps.get, \
        deps.compile
