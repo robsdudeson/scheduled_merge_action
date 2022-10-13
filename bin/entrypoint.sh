@@ -6,6 +6,8 @@ pwd
 
 ls -hal
 
+cd /action
+
 mix do local.hex --force, \
        deps.get, \
        deps.compile
