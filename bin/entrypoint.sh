@@ -8,6 +8,7 @@ ls -hal
 
 cd /action
 
+mix local.rebar --force
 mix do local.hex --force, \
        deps.get, \
        deps.compile
