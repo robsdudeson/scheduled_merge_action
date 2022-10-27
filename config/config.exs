@@ -4,7 +4,7 @@ config :scheduled_merge,
   github: [
     repo: System.get_env("GITHUB_REPOSITORY"),
     api_url: System.get_env("GITHUB_API_URL"),
-    api_token: System.get_env("GITHUB_TOKEN")
+    api_token: System.get_env("INPUT_REPO-TOKEN")
   ],
   labels: [
     default_error_label: %{
