@@ -1,6 +1,9 @@
 name: 'Scheduled Merge Action'
 description: 'A GitHub Action that will automatically merge PRs based on label!'
 author: 'Robby Thompson <robby.thompson@testdouble.com>'
+inputs:
+  repo-token:
+    description: 'The GITHUB_TOKEN secret'
 runs:
   using: 'docker'
   image: 'Dockerfile'
