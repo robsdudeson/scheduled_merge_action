@@ -2,17 +2,13 @@
 
 set -e
 
-pwd
-
-ls -hal
-
 cd /action
 
-env | grep GITHUB
-
+echo "::group::Install mix dependencies"
 mix local.rebar --force
 mix do local.hex --force, \
        deps.get, \
        deps.compile
+echo "::endgroup::"
 
 mix run -e "ScheduledMerge.run()"
