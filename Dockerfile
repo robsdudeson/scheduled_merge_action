@@ -6,6 +6,7 @@ LABEL "repository"="https://github.com/robsdudeson/scheduled_merge_action"
 LABEL "version"="0.0.1"
 
 COPY bin /action/bin
+COPY config /action/config
 COPY README.md LICENSE mix.exs mix.lock /action/
 
 ENTRYPOINT ["/action/bin/entrypoint.sh"]
