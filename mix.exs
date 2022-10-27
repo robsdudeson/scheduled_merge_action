@@ -21,7 +21,7 @@ defmodule ScheduledMergeAction.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:scheduled_merge, git: "https://github.com/robsdudeson/scheduled_merge.git", branch: "test-resource-url"}
+      {:scheduled_merge, git: "https://github.com/robsdudeson/scheduled_merge.git", branch: "main"}
     ]
   end
 end
